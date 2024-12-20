@@ -1,59 +1,139 @@
-.AboutMeBoxWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh; /* Make sure the wrapper takes up the full height of the viewport */
-  }
-  
-/* For the first box */
-.AboutMeBox {
-  width: 600px;
-  height: 550px;
-  background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Example gradient colors */
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  padding: 20px;
-  box-sizing: border-box;
-  font-size: 20px;
-  color: white; /* Ensure text is readable on the gradient background */
-  font-weight: bold;
-}
 
-.AboutMeBox img {
-  max-width: 50%;
-  max-height:50%;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  margin-left:24%;
-}
 
 .info {
   text-align: center;
 }
 
-ul {
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-section {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Profile Summary */
+.profile-summary p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    text-align: justify;
+    color: #555;
+}
+
+/* Profile Info */
+/* Profile Info Wrapper */
+.profile-info-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* Profile Info Section */
+.profile-info {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;
+}
+
+.info-front {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* Personal Info */
+.personal-info ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-li {
+.personal-info li {
   margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
 }
 
-/* Media query for mobile screens */
-@media (max-width: 768px) {
-  .AboutMeBox {
-    width: 90%; /* Make the box width 90% of the viewport width */
-    height: auto; /* Allow the height to adjust based on content */
-    padding: 10px; /* Reduce padding for smaller screens */
-    font-size: 16px; /* Reduce font size for smaller screens */
-  }
+.personal-info i {
+  color: #4e9fdd;
+  margin-right: 10px;
+}
 
-  .AboutMeBox img {
-    max-width: 100%; /* Adjust image size for smaller screens */
-    max-height: 100%; /* Adjust image size for smaller screens */
-    margin-left: 0; /* Center align the image on smaller screens */
-  }
+/* Contact Info */
+.contact-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info {
+    width: 60%;
+}
+
+.contact-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-details li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #555;
+}
+
+.contact-details i {
+    color: #4e9fdd;
+    margin-right: 10px;
+}
+
+.contact-details a {
+    color: #4e9fdd;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .profile-info-wrapper,
+    .contact-info-wrapper {
+        flex-direction: column;
+    }
+
+    .profile-info,
+    .contact-info {
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
 
 
